@@ -1,7 +1,3 @@
-Perfect — thanks for clarifying. I’ll **improve and rewrite** your text so it’s clearer, well-structured, and professional, while keeping it simple and beginner-friendly. Here’s the refined version:
-
----
-
 # API Authentication
 
 **Main Goal:** Ensure the **right person** is accessing the **right data**.

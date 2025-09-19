@@ -1,0 +1,17 @@
+API Authentication
+Main goals for Authentication: Right person accessing right data.
+
+API Keys => Simple Unique Key to access API. When to use? Small internal service
+JWT => self contain token. When to use? when you build scalable stateless auth.
+OAUTH => advanced using third party such as google. When to use? when you allow users login with external account.
+
+What is an API Key?
+to make it easier it's a simple unique identifier such as VIP access card. Long randomly string char that has secret token.
+the key should not be included in URL. It's more secure is include the key in request headers.
+Best Use Case to use API Key?
+- Public APIs -> Weather, maps, stock market data.
+- Internal microservices
+- rate-limiting & analytics - tracking API usage.
+
+What is a JWT?
+JSON Web Token such as a wirstband to enter an event. In web and mobile app. Without send credentials. JWT contain: Header, Payload, Signature.

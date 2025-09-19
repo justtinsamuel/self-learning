@@ -14,4 +14,29 @@ Best Use Case to use API Key?
 - rate-limiting & analytics - tracking API usage.
 
 What is a JWT?
-JSON Web Token such as a wirstband to enter an event. In web and mobile app. Without send credentials. JWT contain: Header, Payload, Signature.
+JSON Web Token such as a wirstband to enter an event. In web and mobile app. Without send credentials.
+JWT contain: Header, Payload, Signature. Verified without storing session data.
+
+How it works?
+User Log In with credential.
+if credential correct JWT generated.
+Client stores the JWT Token in local storage / cookies.
+Everytime user make request to protected route, JWT Token sent in headers.
+Server check if token valid or already expired.
+
+Great example: many-many webs.
+
+What is OAUTH?
+OAUTH is Open Auth. Login with external login credentials (Google/FB/etc).
+Login without create Profile first. but you can only login that way, unless you give your profile a password later.
+
+How it works?
+User request Access (login with google)
+redirect to google (grant access)
+user grant permission (back to the app)
+app excanghes code for token to auth server.
+accessing request using access token.
+
+Great example: social media login. 
+
+Depends on your use case you have to choose your best auth methods.
